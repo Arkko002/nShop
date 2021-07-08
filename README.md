@@ -1,5 +1,6 @@
 nShop
 =====
+[![API CI](https://github.com/Arkko002/nShop/actions/workflows/api.yml/badge.svg?branch=master)](https://github.com/Arkko002/nShop/actions/workflows/api.yml) [![Front CI](https://github.com/Arkko002/nShop/actions/workflows/front.yml/badge.svg?branch=master)](https://github.com/Arkko002/nShop/actions/workflows/front.yml)
 
 Simple open-source implementation of e-commerce service.
 
