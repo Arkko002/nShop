@@ -31,7 +31,35 @@ const products: Array<Product> = [
 		price: 1,
 		category: "Category3",
 		image: "https://i.imgur.com/l9UeHxd.png"
-	}
+	},
+	<Product>{
+		name: "Product5",
+		description: "This is a product",
+		price: 1,
+		category: "Category3",
+		image: "https://i.imgur.com/l9UeHxd.png"
+	},
+	<Product>{
+		name: "Product6",
+		description: "This is a product",
+		price: 1,
+		category: "Category3",
+		image: "https://i.imgur.com/l9UeHxd.png"
+	},
+	<Product>{
+		name: "Product5",
+		description: "This is a product",
+		price: 1,
+		category: "Category3",
+		image: "https://i.imgur.com/l9UeHxd.png"
+	},
+	<Product>{
+		name: "Product5",
+		description: "This is a product",
+		price: 1,
+		category: "Category3",
+		image: "https://i.imgur.com/l9UeHxd.png"
+	},
 ];
 
 //TODO Add cacheing

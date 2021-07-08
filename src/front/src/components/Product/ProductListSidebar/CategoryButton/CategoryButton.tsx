@@ -7,7 +7,7 @@ interface CategoryButtonProps {
 
 function CategoryButton(props: CategoryButtonProps) {
 	return (
-		<div className="border-b-2 border-blue-100">
+		<div className="">
 			<Link className="flex items-center hover:text-blue-300" to={"/products/" + props.category}>{props.category}</Link>
 		</div>
 	);

@@ -7,13 +7,13 @@ interface ProductListProps {
 	products: Array<Product>
 }
 
-function ProductList(props: ProductListProps) {
+function ProductList(props: ProductListProps): React.ReactElement {
 	//TODO
 
 	return (
-		<div className="flex bg-gray-100 w-full h-screen lg:px-48 self-center">
+		<div className="flex self-start w-full h-full lg:px-48">
 			<ProductListSidebar/>
-			<ul className="w-full ml-5 bg-white">
+			<ul className="w-full ml-5 overflow-scroll bg-white">
 				{props.products.map(product => (
 					<li key={product.name}>
 						<ProductCard product={product} />

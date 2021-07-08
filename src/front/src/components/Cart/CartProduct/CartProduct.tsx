@@ -7,19 +7,16 @@ interface CartProductProps {
 
 function CartProduct(props: CartProductProps) {
 	return(
-		<div className="flex w-full justify-around border-b-2 bg-white">
-			<div className="flex">
-				<img className="w-32 h-32" src={props.product.image}/>
-				<span className="pt-5">{props.product.name}</span>
-			</div>
-			<div className="flex flex-col justify-around">
-				<span>{props.product.price}$</span>
-				{/*TODO Quantity*/}
-				<label className="">
-					Quantity:
-					<input type="number" min="1" max="99"/>
-				</label>
-			</div>
+		<div className="flex items-center justify-around w-full bg-white border-b-2">
+			<img className="w-32 h-32" src={props.product.image}/>
+			<span>{props.product.name}</span>
+
+			<span className="font-bold">{props.product.price}$</span>
+			{/*TODO Quantity*/}
+			<label>
+				Quantity:
+				<input className="w-16 pl-2" value="1" type="number" min="1" max="99"/>
+			</label>
 		</div>
 	);
 }

@@ -16,3 +16,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app-content {
+	height: calc(100vh - theme('height.16') - theme('height.8') - theme(height.8));
+}

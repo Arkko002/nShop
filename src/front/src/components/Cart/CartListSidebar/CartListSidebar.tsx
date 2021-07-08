@@ -1,29 +1,16 @@
 import React from "react";
+import CartListSidebarInput from "./CartListSidebarInput";
 
-function CartListSidebar() {
+function CartListSidebar(): React.ReactElement {
 	return(
-		<div className="flex flex-col bg-white">
-			<form>
-				<label className="flex flex-col">
-                  E-mail:
-					<input type="email"/>
-				</label>
-				<label className="flex flex-col">
-                   Address:
-					<input type="text"/>
-				</label>
-				<label className="flex flex-col">
-                   Name:
-					<input type="text"/>
-				</label>
-				<label className="flex flex-col">
-                   Phone:
-					<input type="tel"/>
-				</label>
+		<form className="flex flex-col self-start bg-white border-t-4 border-blue-300">
+			<CartListSidebarInput label="E-mail" inputType="email"/>
+			<CartListSidebarInput label="Address" inputType="text"/>
+			<CartListSidebarInput label="Name" inputType="text"/>
+			<CartListSidebarInput label="Phone" inputType="tel"/>
 
-				<input type="submit" value="Order"/>
-			</form>
-		</div>
+			<input className="self-end mt-4 w-full h-12 bg-blue-400 hover:bg-blue-300" type="submit" value="Order"/>
+		</form>
 	);
 }
 
